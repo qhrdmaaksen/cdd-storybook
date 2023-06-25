@@ -1,0 +1,49 @@
+Arguments: 
+  D:\node.exe C:\Users\main\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add styled-components
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\main\bin;D:\HansaStudy\LinuxLecture\InstallFiles\vmwareInstallFiles\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;D:\한양대수업\C언어 코드블럭스\WinAVR C언어\bin;D:\한양대수업\C언어;드블럭스\WinAVR C언;D:\utils\bin;C:\Pr;gram Files\dotnet;C:\WINDOWS\system32;D:\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\MySQL\MySQL Server 8.0\bin;D:\Git;FS;C:\Program Files\dotnet;C:\MinGW\bin;C:\java\jdk-12.0.2_windows-x64_bin\jdk-12.0.2\bin;D:\nodeFolder;D:\Git\cmd;C:\Users\main\AppData\Roaming;C:\Program Files\Nodejs;D:\intellijProjects\reactSPA-board-PJ\node_modules\.bin;node_modules\npm;D:\nodeFolder\node_modules\nvm;D:\nodeFolder;D:\;D:\node_modules;D:\JetBrains\Toolbox\scripts;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\GHI;C:\Users\main\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\main\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\main\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\main\AppData\Local\Programs\Python\Python38;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Program Files\Java\jdk-9\bin;C:\Users\main\AppData\Local\afreeca;D:\Microsoft VS Code\bin;D:\한사대수업\파이썬\Scripts;D:\webStorm\WebStorm 2021.3.2\bin;D:\CLion\CLion 2021.3.4\bin;D:\IntelliJ IDEA 2020.3.2\bin;C:\Users\main\AppData\Roaming\npm;C:\Program Files\Java\jdk-9\bin;C:\Users\main\AppData\Local\afreeca;D:\Microsoft VS Code\bin;D:\한사대수업\파이썬\Scripts;D:\webStorm\WebStorm 2021.3.2\bin;D:\CLion\CLion 2021.3.4\bin;D:\IntelliJ IDEA 2020.3.2\bin;C:\Users\main\AppData\Roaming\npm;C:\Users\main\AppData\Local\JetBrains\Toolbox\scripts;D:\intellijProjects\cdd-storybook-wanted\node_modules\.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\intellijProjects\cdd-storybook-wanted\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "cdd-storybook-wanted",
+    "version": "1.0.0",
+    "description": "원티드 프리온보딩 챌린지 / 스토리북과 함께하는 컴포넌트 주도 개발",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "storybook": "storybook dev -p 6006",
+      "build-storybook": "storybook build"
+    },
+    "devDependencies": {
+      "@storybook/addon-essentials": "^7.0.23",
+      "@storybook/addon-interactions": "^7.0.23",
+      "@storybook/addon-links": "^7.0.23",
+      "@storybook/blocks": "^7.0.23",
+      "@storybook/react": "^7.0.23",
+      "@storybook/react-vite": "^7.0.23",
+      "@storybook/testing-library": "^0.0.14-next.2",
+      "prop-types": "^15.8.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "storybook": "^7.0.23"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
