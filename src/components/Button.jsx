@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
 /**
- * Primary UI component for user interaction
+ * 사용자 상호 작용을 위한 기본 UI 구성 요소
  */
-export const Button = ({backgroundColor, label, ...props}) => {
+export const Button = ({color, backgroundColor, label, ...props}) => {
     return (
-        <DefaultButton $backgroundColor={backgroundColor} {...props}>
+        <DefaultButton $color={color} $backgroundColor={backgroundColor} {...props}>
             {label}
         </DefaultButton>
     );
 };
 
 const DefaultButton = styled.button`
+  color: ${(props) => (props.$color ? props.$color : '#000')}
   background-color: ${(props) => props.$backgroundColor ? props.$backgroundColor : '#BF4F74'}
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -26,26 +27,28 @@ const DefaultButton = styled.button`
 
 Button.propTypes = {
     /**
-     * Is this the principal call to action on the page?
+     * 이것이 페이지의 주요 클릭 유도문안입니까?
      */
+    color: PropTypes.string,
     /**
-     * What background color to use
+     * 사용할 배경색
      */
     backgroundColor: PropTypes.string,
     /**
-     * How large should the button be?
+     * 버튼은 얼마나 커야 합니까?
      */
     /**
-     * Button contents
+     * 버튼 내용
      */
     label: PropTypes.string.isRequired,
     /**
-     * Optional click handler
+     * 선택적 클릭 핸들러
      */
     onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
+    color: null,
     backgroundColor: null,
     onClick: undefined,
 };

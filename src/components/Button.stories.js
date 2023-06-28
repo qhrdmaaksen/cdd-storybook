@@ -6,6 +6,7 @@ export default {
   component: Button,
   tags: ['autodocs'],
   argTypes: {
+    color: { control: 'color'},
     backgroundColor: { control: 'color' },
   },
 };
@@ -13,7 +14,6 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default = {
   args: {
-    primary: true,
     label: 'Button',
   },
 };
