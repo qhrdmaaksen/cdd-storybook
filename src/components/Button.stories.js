@@ -6,8 +6,8 @@ export default {
   component: Button,
   tags: ['autodocs'],
   argTypes: {
-    color: { control: 'color'},
     backgroundColor: { control: 'color' },
+    color: { control: 'color'},
   },
 };
 

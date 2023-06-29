@@ -1,13 +1,23 @@
 {
-  "name": "cdd-storybook-wanted",
+  "name": "cdd-storybook",
   "version": "1.0.0",
   "description": "원티드 프리온보딩 챌린지 / 스토리북과 함께하는 컴포넌트 주도 개발",
-  "main": "index.js",
+  "author": "vitamin777",
   "license": "MIT",
+  "keywords": [],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rm -rf dist && rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepack": "yarn build"
+  },
+  "main": "dist/esm/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.23",
@@ -17,14 +27,19 @@
     "@storybook/react": "^7.0.23",
     "@storybook/react-vite": "^7.0.23",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "esbuild": "0.18.10",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "rollup": "^3.25.2",
+    "rollup-plugin-esbuild": "^5.0.0",
     "storybook": "^7.0.23",
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "styled-components": "^6.0.0-rc.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "styled-components": "^6.0.0-rc.6"
   }
 }
