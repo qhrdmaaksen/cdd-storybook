@@ -40,7 +40,7 @@ $ yarn add cdd-storybook
  // App.jsx
 import { Button } from 'cdd-storybook';
 
-const App () => {
+const App = () => {
   return (
     <Button label='안녕하세요' color='#fff' background='#000' />
   )
