@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 /**
  * 사용자 상호 작용을 위한 기본 UI 구성 요소
@@ -14,8 +14,9 @@ export const Button = ({color, backgroundColor, label, ...props}) => {
 };
 
 const DefaultButton = styled.button`
-  color: ${(props) => (props.$color ? props.$color : '#000')}
-  background-color: ${(props) => props.$backgroundColor ? props.$backgroundColor : '#BF4F74'}
+  color: ${(props) => (props.$color ? props.$color : '#000')};
+  background-color: ${(props) => 
+  props.$backgroundColor ? props.$backgroundColor : '#BF4F74'};
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
@@ -35,9 +36,6 @@ Button.propTypes = {
      */
     backgroundColor: PropTypes.string,
     /**
-     * 버튼은 얼마나 커야 합니까?
-     */
-    /**
      * 버튼 내용
      */
     label: PropTypes.string.isRequired,
@@ -48,7 +46,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    color: null,
     backgroundColor: null,
+    color: null,
     onClick: undefined,
 };
